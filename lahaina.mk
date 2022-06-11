@@ -356,15 +356,6 @@ TARGET_BOARD_PLATFORM := lahaina
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
-# Perf
-PRODUCT_PACKAGES += \
-    libpsi.vendor \
-    libtflite
-
-PRODUCT_BOOT_JARS += \
-    QPerformance \
-    UxPerformance
-
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti
@@ -372,10 +363,6 @@ PRODUCT_PACKAGES += \
 # PowerShare
 PRODUCT_PACKAGES += \
     vendor.lineage.powershare@1.0-service.star
-
-# QTI
-PRODUCT_PACKAGES += \
-    libqti_vndfwk_detect.vendor
 
 # Radio
 PRODUCT_PACKAGES += \
