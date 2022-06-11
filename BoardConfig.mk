@@ -176,9 +176,6 @@ TARGET_COPY_OUT_SYSTEM_EXT := system_ext
 TARGET_COPY_OUT_VENDOR := vendor
 TARGET_COPY_OUT_VENDOR_DLKM := vendor_dlkm
 
-# Platform
-TARGET_BOARD_PLATFORM := lahaina
-
 # Power
 TARGET_TAP_TO_WAKE_NODE := "/sys/devices/virtual/touch/tp_dev/double_tap"
 
@@ -200,9 +197,6 @@ TARGET_USERIMAGES_USE_F2FS := true
 
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
-
-# Security patch level
-VENDOR_SECURITY_PATCH := 2023-05-01
 
 # Sepolicy
 include device/qcom/sepolicy_vndr/SEPolicy.mk
