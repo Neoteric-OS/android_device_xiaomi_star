@@ -364,6 +364,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.lineage.powershare@1.0-service.star
 
+# QTI
+TARGET_COMMON_QTI_COMPONENTS := \
+    perf
+
 # Radio
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.6.vendor \
