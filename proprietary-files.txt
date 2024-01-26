@@ -1115,6 +1115,9 @@ vendor/etc/libnfc-mtp-SN100.conf|a9570f1f620dcad9b9d5fe24eb3255c3f13c6099
 vendor/etc/libnfc-mtp-SN100_38_4MHZ.conf|bfe54a5b7d327c11a0b160b651f5c3e7dd927ef6
 vendor/lib/libsn100u_fw.so|3f2e06db925881ef846e93b39d2d5563ad8e0995
 
+# NFC
+vendor/lib64/se_nq_extn_client.so
+
 # NVRAM
 vendor/bin/nv_mac
 
