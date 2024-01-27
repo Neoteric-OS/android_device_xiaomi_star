@@ -276,7 +276,7 @@ PRODUCT_PACKAGES += \
 
 # PowerShare
 PRODUCT_PACKAGES += \
-    vendor.lineage.powershare@1.0-service.star
+    vendor.lineage.powershare-service
 
 # QTI
 TARGET_COMMON_QTI_COMPONENTS := \
