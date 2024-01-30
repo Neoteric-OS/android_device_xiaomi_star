@@ -127,6 +127,9 @@ TARGET_KERNEL_ADDITIONAL_FLAGS := DTC_EXT=$(shell pwd)/prebuilts/misc/linux-x86/
 TARGET_KERNEL_CONFIG := vendor/star-qgki_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sm8350
 
+# Lineage Health
+TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_BYPASS := false
+
 # NFC
 TARGET_USES_NQ_NFC := true
 
