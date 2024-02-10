@@ -7,9 +7,6 @@ persist.vendor.btstack.enable.twsplus=true
 persist.vendor.btstack.enable.twsplussho=true
 vendor.bluetooth.soc=hastings
 
-# Charger
-ro.charger.enable_suspend=true
-
 # Display
 debug.gralloc.gfx_ubwc_disable=0
 debug.sf.enable_hwc_vds=1
