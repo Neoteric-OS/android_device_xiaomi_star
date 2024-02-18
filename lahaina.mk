@@ -150,10 +150,6 @@ PRODUCT_PACKAGES += \
     libcodec2_hidl@1.1.vendor \
     libcodec2_vndk.vendor
 
-# Dirac
-PRODUCT_PACKAGES += \
-    Dirac
-
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.4.vendor \
@@ -310,6 +306,10 @@ TARGET_BOARD_PLATFORM := lahaina
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
+
+# Parts
+PRODUCT_PACKAGES += \
+    XiaomiParts
 
 # Power
 PRODUCT_PACKAGES += \
