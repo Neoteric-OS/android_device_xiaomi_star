@@ -77,6 +77,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_SHIPPING_API_LEVEL := 30
 
 # Audio
+TARGET_LOOP_COMPRESS_READ := true
+
 PRODUCT_PACKAGES += \
     libqcompostprocbundle \
     libqcomvisualizer \
