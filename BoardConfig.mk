@@ -201,6 +201,11 @@ SOONG_CONFIG_NAMESPACES += ufsbsg
 SOONG_CONFIG_ufsbsg += ufsframework
 SOONG_CONFIG_ufsbsg_ufsframework := bsg
 
+# Sensors
+SOONG_CONFIG_NAMESPACES += SENSORS_XIAOMI
+SOONG_CONFIG_SENSORS_XIAOMI += USES_UDFPS_SENSOR
+SOONG_CONFIG_SENSORS_XIAOMI_USES_UDFPS_SENSOR := true
+
 # Sepolicy
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 
