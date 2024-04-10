@@ -561,4 +561,7 @@
     <!-- Pocket Lock -->
     <bool name="config_pocketModeLightSensorSupported">false</bool>
 
+    <!-- Udfps vendor code -->
+    <integer name="config_udfps_vendor_code">22</integer>
+
 </resources>
