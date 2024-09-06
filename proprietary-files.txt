@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from star UKQ1.231207.002-V816.0.3.0.UKACNXM
+# All unpinned blobs below are extracted from star V816.0.4.0.UKAMIXM
 
 # ACDB
 vendor/etc/acdbdata/Tutu/mars/Tutu_Bluetooth_cal_mars.acdb
