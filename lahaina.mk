@@ -446,3 +446,7 @@ PRODUCT_PACKAGES += \
     libdisplayconfig.qti.vendor \
     libnl \
     libwfdaac_vendor
+
+# WiFi firmware symlinks
+PRODUCT_PACKAGES += \
+    firmware_WCNSS_qcom_cfg.ini_symlink
