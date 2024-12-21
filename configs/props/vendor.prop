@@ -152,6 +152,11 @@ vendor.display.use_layer_ext=1
 persist.vendor.dpm.nsrm.bkg.evt=3955
 persist.vendor.dpmhalservice.enable=1
 
+# Fingerprint
+persist.vendor.fingerprint.type=udfps_optical \
+persist.vendor.fingerprint.sensor_location=720|2490|132 \
+persist.vendor.fingerprint.sensor_modules=goodix_fod \
+
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
