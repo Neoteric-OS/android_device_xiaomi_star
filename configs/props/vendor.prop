@@ -153,9 +153,9 @@ persist.vendor.dpm.nsrm.bkg.evt=3955
 persist.vendor.dpmhalservice.enable=1
 
 # Fingerprint
-persist.vendor.fingerprint.type=udfps_optical \
-persist.vendor.fingerprint.sensor_location=720|2490|132 \
-persist.vendor.fingerprint.sensor_modules=goodix_fod \
+persist.vendor.fingerprint.type=udfps_optical
+persist.vendor.fingerprint.sensor_location=720|2490|132
+persist.vendor.fingerprint.sensor_modules=goodix_fod
 
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
@@ -183,13 +183,6 @@ ro.netflix.bsp_rev=Q875-32408-1
 # NFC
 ro.vendor.nfc.repair=1
 ro.vendor.se.type=eSE,HCE,UICC
-
-# Perf
-ro.vendor.perf-hal.ver=2.2
-ro.vendor.extension_library=libqti-perfd-client.so
-ro.vendor.perf.scroll_opt=true
-ro.vendor.qspm.enable=true
-vendor.power.pasr.enabled=true
 
 # Radio
 keyguard.no_require_sim=true

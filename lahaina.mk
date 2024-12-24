@@ -20,6 +20,8 @@ $(call inherit-product, vendor/xiaomi/star/star-vendor.mk)
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-8192-dalvik-heap.mk)
 
+PRODUCT_ENABLE_UFFD_GC := false
+
 # API
 PRODUCT_SHIPPING_API_LEVEL := 30
 
@@ -444,3 +446,13 @@ PRODUCT_PACKAGES += \
 # WiFi firmware symlinks
 PRODUCT_PACKAGES += \
     firmware_WCNSS_qcom_cfg.ini_symlink
+
+PRODUCT_PACKAGES += \
+    libaudioroute.vendor \
+    liblz4.vendor \
+    libssl.vendor \
+    libcurl.vendor \
+    libjsoncpp.vendor \
+    libsqlite.vendor \
+    libcrypto-v33 \
+    libpng.vendor
