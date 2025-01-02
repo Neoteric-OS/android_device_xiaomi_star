@@ -1,1 +1,2 @@
+type goodix_fingerprint_data_file, data_file_type, file_type, core_data_file_type;
 type vendor_dtool_exec, exec_type, file_type, vendor_file_type;
