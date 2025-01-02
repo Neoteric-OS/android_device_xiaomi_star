@@ -254,6 +254,7 @@ PRODUCT_PACKAGES += \
     SystemUIResStar
 
 # Platform
+PRODUCT_ENABLE_UFFD_GC := false
 PRODUCT_BOARD_PLATFORM := lahaina
 TARGET_BOARD_PLATFORM := lahaina
 
