@@ -72,9 +72,8 @@ function blob_fixup() {
             sed -i 's/xml=version/xml\ version/g' "${2}"
 	    ;;
         vendor/lib64/libwvhidl.so)
-            "${PATCHELF}" --replace-needed "libcrypto.so" "libcrypto-v33.so" "${2}"
-            "${PATCHELF}" --replace-needed "libcrypto.so" "libcrypto-v33.so" "libcrypto-v34.so" "${2}"
-            "${PATCHELF}" --set-soname "libcrypto-v34.so" "${2}"
+            [ "$2" = "" ] && return 0
+            "${PATCHELF}" --add-needed "libcrypto_shim.so" "${2}"
             ;;
         vendor/lib64/vendor.xiaomi.hardware.cameraperf@1.0-impl.so)
             hexdump -ve '1/1 "%.2X"' "${2}" | sed "s/7C000094881640F9/1F2003D5881640F9/g" | xxd -r -p > "${EXTRACT_TMP_DIR}/${1##*/}"
