@@ -48,27 +48,6 @@ PRODUCT_SHIPPING_API_LEVEL := 30
 # Audio
 TARGET_LOOP_COMPRESS_READ := true
 
-PRODUCT_PACKAGES += \
-    libqcompostprocbundle \
-    libqcomvisualizer \
-    libqcomvoiceprocessing \
-    libvolumelistener
-
-PRODUCT_PACKAGES += \
-    audioadsprpcd \
-    audio.r_submix.default \
-    audio.usb.default \
-    libtinycompress
-
-PRODUCT_PACKAGES += \
-    android.hardware.audio@6.0-impl \
-    android.hardware.audio.effect@6.0-impl \
-    android.hardware.audio.service \
-    android.hardware.soundtrigger@2.3-impl
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/audio_policy_configuration.xml
-
 PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
     frameworks/av/services/audiopolicy/config/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
@@ -292,6 +271,7 @@ PRODUCT_PACKAGES += \
 # QTI
 TARGET_COMMON_QTI_COMPONENTS := \
     adreno \
+    audio \
     av \
     bt \
     display \
@@ -301,6 +281,8 @@ TARGET_COMMON_QTI_COMPONENTS := \
     telephony \
     wlan \
     usb
+
+TARGET_FWK_SUPPORTS_FULL_VALUEADDS := true
 
 # Radio
 PRODUCT_PACKAGES += \

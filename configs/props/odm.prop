@@ -1,2 +1,6 @@
+# Audio
+vendor.audio.feature.audiozoom.enable=true
+ro.vendor.audio.sdk.fluencetype=fluence
+
 # Qcom
 ro.vendor.qti.va_odm.support=1
