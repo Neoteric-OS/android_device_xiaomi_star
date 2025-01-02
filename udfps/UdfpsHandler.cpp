@@ -31,8 +31,6 @@
 #define DISP_PARAM_LOCAL_HBM_OFF "0"
 #define DISP_PARAM_LOCAL_HBM_ON "1"
 
-#define FINGERPRINT_ACQUIRED_VENDOR 6
-
 template <typename T>
 static void set(const std::string& path, const T& value) {
     std::ofstream file(path);
@@ -98,24 +96,16 @@ public:
     }
 
     void onAcquired(int32_t result, int32_t vendorCode) {
-	if (result != FINGERPRINT_ACQUIRED_VENDOR) {
+        if (result == FINGERPRINT_ACQUIRED_GOOD) {
             mDevice->extCmd(mDevice, COMMAND_NIT, PARAM_NIT_NONE);
             set(DISP_PARAM_PATH, std::string(DISP_PARAM_LOCAL_HBM_MODE) + " " + DISP_PARAM_LOCAL_HBM_OFF);
-            if (result == FINGERPRINT_ACQUIRED_GOOD) {
-                set(FOD_STATUS_PATH, FOD_STATUS_OFF);
-            }
+            set(FOD_STATUS_PATH, FOD_STATUS_OFF);
         } else if (vendorCode == 21 || vendorCode == 23) {
             /*
              * vendorCode = 21 waiting for fingerprint authentication
              * vendorCode = 23 waiting for fingerprint enroll
              */
             set(FOD_STATUS_PATH, FOD_STATUS_ON);
-        } else if (vendorCode == 44) {
-            /*
-             * vendorCode = 44 fingerprint scan failed
-             */
-            mDevice->extCmd(mDevice, COMMAND_NIT, PARAM_NIT_NONE);
-            set(DISP_PARAM_PATH, std::string(DISP_PARAM_LOCAL_HBM_MODE) + " " + DISP_PARAM_LOCAL_HBM_OFF);
         }
     }
 
