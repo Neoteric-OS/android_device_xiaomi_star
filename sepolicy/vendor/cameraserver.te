@@ -1,1 +1,2 @@
 allow cameraserver property_socket:sock_file { write };
+get_prop(cameraserver, vendor_display_prop)

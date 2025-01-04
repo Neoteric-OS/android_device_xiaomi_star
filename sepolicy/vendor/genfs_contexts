@@ -7,6 +7,7 @@ genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display-primary/dimlayer_expos
 genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display-primary/hbm_enabled u:object_r:vendor_sysfs_graphics:s0
 
 # Extcon sysfs
+genfscon sysfs /devices/platform/soc/soc:extcon_usb1/extcon/extcon3/cable.1/name u:object_r:sysfs_extcon:s0
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pm8150b@2:qcom,usb-pdphy@1700/extcon			u:object_r:sysfs_extcon:s0
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pm8150b@2:qcom,qpnp-smb5/extcon				u:object_r:sysfs_extcon:s0
 
@@ -57,3 +58,15 @@ genfscon sysfs /devices/platform/soc/4080000.qcom,mss/subsys8/wakeup/wakeup54 u:
 genfscon sysfs /devices/platform/soc/98900000.qcom,turing/wakeup/wakeup44 u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-03/c440000.qcom,spmi:qcom,pm8350b@3:qcom,amoled/wakeup/wakeup0 u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/b0000000.qcom,cnss-qca6490/subsys10/wakeup/wakeup72 u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/5c00000.qcom,ssc/wakeup/wakeup50 u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/884000.i2c/i2c-4/4-0028/wakeup/wakeup69 u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/17300000.qcom,lpass/subsys6/wakeup/wakeup49 u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/abb0000.qcom,evass/subsys1/wakeup/wakeup39 u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/188101c.qcom,spss/subsys5/wakeup/wakeup47 u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,ipa_fws/subsys0/wakeup/wakeup37 u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/98900000.qcom,turing/subsys4/wakeup/wakeup45 u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/5c00000.qcom,ssc/subsys7/wakeup/wakeup51 u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,trustedvm@d0800000/subsys2/wakeup/wakeup41 u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/soc:fingerprint_goodix/wakeup/wakeup68 u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,kgsl-hyp/subsys3/wakeup/wakeup43 u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,kgsl-hyp/subsys3/wakeup/wakeup43/event_count u:object_r:sysfs_wakeup:s0

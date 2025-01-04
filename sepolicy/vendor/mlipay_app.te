@@ -23,4 +23,3 @@ set_prop(mlipay_app, vendor_mlipay_prop);
 
 get_prop(mlipay_app, vendor_fp_prop)
 get_prop(mlipay_app, vendor_fp_info_prop)
-
