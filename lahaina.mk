@@ -20,9 +20,6 @@ $(call inherit-product, vendor/xiaomi/star/star-vendor.mk)
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-8192-dalvik-heap.mk)
 
-# API
-PRODUCT_SHIPPING_API_LEVEL := 30
-
 # A/B
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/compression_with_xor.mk)
 
