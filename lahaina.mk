@@ -210,8 +210,11 @@ PRODUCT_PACKAGES += \
     libOmxAmrEnc \
     libOmxEvrcEnc \
     libOmxG711Enc \
+    libstagefrighthw \
+    libstagefright_foundation \
     libstagefright_omx \
-    libstagefright_foundation
+    libstagefright_softomx_plugin.vendor \
+    libstagefright_softomx_plugin.vendor
 
 # Minijail
 PRODUCT_PACKAGES += \
