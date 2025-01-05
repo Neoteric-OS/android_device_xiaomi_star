@@ -264,9 +264,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     FrameworksResStar \
-    PEStarFrameworks \
-    PEStarSettings \
-    PEStarSystemUI \
     SettingsProviderOverlayStar \
     SettingsResStar \
     SystemUIResStar
