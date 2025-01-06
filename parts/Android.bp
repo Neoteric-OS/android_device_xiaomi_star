@@ -22,7 +22,10 @@ android_app {
     platform_apis: true,
     system_ext_specific: true,
 
-    static_libs: ["SettingsLib"],
+    static_libs: [
+        "SettingsLib",
+        "com.google.android.material_material",
+    ],
 
     optimize: {
         proguard_flags_files: ["proguard.flags"],
