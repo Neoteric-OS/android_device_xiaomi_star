@@ -174,6 +174,7 @@ vendor/lib64/libjnihelper.so
 vendor/lib64/vendor.qti.hardware.cacert@1.0.so
 
 # Camera
+system/lib64/libion.so:vendor/lib64/libion.so
 vendor/bin/hw/android.hardware.camera.provider@2.4-virtual-camera-service
 vendor/etc/init/android.hardware.camera.provider@2.4-virtual-camera-service.rc
 vendor/lib64/camera/com.qti.eeprom.mars_ofilm_ov13b10_p24c64f_ultra_eeprom.so
@@ -216,7 +217,6 @@ vendor/lib64/camera/fdconfigvideolite.bin
 vendor/lib64/hw/android.hardware.camera.provider@2.4-impl-vcamera.so
 vendor/lib64/hw/camera.qcom.so
 vendor/lib64/hw/camera.xiaomi.so
-vendor/lib64/hw/camera.qcom.so
 vendor/lib64/hw/com.qti.chi.override.so
 vendor/lib64/HDR10plus.so
 vendor/lib64/com.qti.chiusecaseselector.so
@@ -311,8 +311,10 @@ vendor/lib64/libmibokeh_845_video.so
 vendor/lib64/libmibokeh_855.so
 vendor/lib64/libmibokeh_mask.so
 vendor/lib64/libmibokeh_mask_dsp.so
+vendor/lib64/libmicuttlefish_fs.so
 vendor/lib64/libmiphone_capture_bokeh.so
 vendor/lib64/libmiphone_preview_bokeh.so
+vendor/lib64/libmivsock_utils.so
 vendor/lib64/libmpbase.so
 vendor/lib64/libnanopb.so
 vendor/lib64/libofflinedump.so
@@ -480,6 +482,26 @@ vendor/etc/camera/xiaomi/superhdsnapshot.json
 vendor/etc/camera/xiaomi/thirdpartydualbokehyuvsnapshot.json
 vendor/etc/camera/xiaomi/thirdpartyjpegsnapshot.json
 vendor/etc/camera/xiaomi/thirdpartysnapshot.json
+vendor/etc/camera/102_SummerDay.png
+vendor/etc/camera/103_Fantasy.png
+vendor/etc/camera/104_Meet.png
+vendor/etc/camera/105_WindSing.png
+vendor/etc/camera/106_Lost.png
+vendor/etc/camera/107_Central.png
+vendor/etc/camera/108_NorthernEurope.png
+vendor/etc/camera/109_Rome.png
+vendor/etc/camera/110_BlackGold.png
+vendor/etc/camera/111_GreenOrange.png
+vendor/etc/camera/112_CyberPunk.png
+vendor/etc/camera/113_BlackIce.png
+vendor/etc/camera/121_Bleach.png
+vendor/etc/camera/122_Thriller.png
+vendor/etc/camera/123_TealOrange.png
+vendor/etc/camera/124_JapaneseStyle.png
+vendor/etc/camera/125_Latin.png
+vendor/etc/camera/126_Fantasy2.png
+vendor/etc/camera/127_Creamy.png
+vendor/etc/camera/128_Sepia.png
 vendor/etc/camera/CFR_para_MACRO_V01.bin
 vendor/etc/camera/CFR_para_MACRO_V01_L.bin
 vendor/etc/camera/CFR_para_MACRO_V01_SN.bin
@@ -522,6 +544,35 @@ vendor/etc/camera/LDC_PACKDATA_VENDORID_0x07.bin
 vendor/etc/camera/LDC_PACKDATA_VENDORID_0x07_CN.bin
 vendor/etc/camera/MobNetv2TF_0.35_iter200000_zoom2.5x_h1500w2000.dlc
 vendor/etc/camera/ai_enhance.dlc
+vendor/etc/camera/aivsModels1
+vendor/etc/camera/aivsParams
+vendor/etc/camera/almalence_sr_params_moon.config
+vendor/etc/camera/almalence_sr_params_moon_k1a.config
+vendor/etc/camera/almalence_sr_params_tele.config
+vendor/etc/camera/almalence_sr_params_tele50x.config
+vendor/etc/camera/almalence_sr_params_tele50x_iso100.config
+vendor/etc/camera/almalence_sr_params_tele50x_remosaic.config
+vendor/etc/camera/almalence_sr_params_tele_fusion.config
+vendor/etc/camera/almalence_sr_params_tele_fusion_iso100.config
+vendor/etc/camera/almalence_sr_params_tele_iso100.config
+vendor/etc/camera/almalence_sr_params_tele_iso100_k1a.config
+vendor/etc/camera/almalence_sr_params_tele_k1a.config
+vendor/etc/camera/almalence_sr_params_tele_remosaic.config
+vendor/etc/camera/almalence_sr_params_wide.config
+vendor/etc/camera/almalence_sr_params_wide2x.config
+vendor/etc/camera/almalence_sr_params_wide2x_iso100.config
+vendor/etc/camera/almalence_sr_params_wide_fusion.config
+vendor/etc/camera/almalence_sr_params_wide_fusion_iso100.config
+vendor/etc/camera/almalence_sr_params_wide_fusion_remosaic.config
+vendor/etc/camera/almalence_sr_params_wide_iso100.config
+vendor/etc/camera/almalence_sr_params_wide_remosaic.config
+vendor/etc/camera/alphablend.bin
+vendor/etc/camera/beauty_style_blue.cng
+vendor/etc/camera/beauty_style_masculine.cng
+vendor/etc/camera/beauty_style_neutral.cng
+vendor/etc/camera/beauty_style_nude.cng
+vendor/etc/camera/beauty_style_pink.cng
+vendor/etc/camera/beauty_style_skin_gloss.cng
 vendor/etc/camera/bokehParams.json
 vendor/etc/camera/cache
 vendor/etc/camera/camxoverridesettings.txt
@@ -572,6 +623,7 @@ vendor/etc/camera/vidhance_calibration
 # Camera plugins
 vendor/lib64/camera/plugins/com.qcom.plugin.gpu.so
 vendor/lib64/camera/plugins/com.qcom.plugin.offlinepostproc.so
+vendor/lib64/camera/plugins/com.xiaomi.plugin.arcsoftsll.so
 vendor/lib64/camera/plugins/com.xiaomi.plugin.bodyslim.so
 vendor/lib64/camera/plugins/com.xiaomi.plugin.capbokeh.so
 vendor/lib64/camera/plugins/com.xiaomi.plugin.dc.so
