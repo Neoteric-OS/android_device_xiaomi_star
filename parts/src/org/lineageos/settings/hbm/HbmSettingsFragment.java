@@ -22,17 +22,17 @@ import android.util.Log;
 import android.widget.Toast;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceFragment;
-import androidx.preference.SwitchPreference;
+import androidx.preference.SwitchPreferenceCompat;
 
 import org.lineageos.settings.R;
 
 public class HbmSettingsFragment extends PreferenceFragment {
-    private SwitchPreference mHbmPreference;
+    private SwitchPreferenceCompat mHbmPreference;
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
         addPreferencesFromResource(R.xml.hbm_settings);
-        mHbmPreference = (SwitchPreference) findPreference(HbmUtils.HBM_KEY);
+        mHbmPreference = (SwitchPreferenceCompat) findPreference(HbmUtils.HBM_KEY);
 
         if (mHbmPreference != null) {
             if (!HbmUtils.getHbmSupportStatus().equals(HbmUtils.HBM_NOT_SUPPORT)) {
