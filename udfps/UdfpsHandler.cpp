@@ -93,6 +93,7 @@ public:
     void onFingerUp() {
         mDevice->extCmd(mDevice, COMMAND_NIT, PARAM_NIT_NONE);
         set(DISP_PARAM_PATH, std::string(DISP_PARAM_LOCAL_HBM_MODE) + " " + DISP_PARAM_LOCAL_HBM_OFF);
+        set(FOD_STATUS_PATH, FOD_STATUS_OFF);
     }
 
     void onAcquired(int32_t result, int32_t vendorCode) {
