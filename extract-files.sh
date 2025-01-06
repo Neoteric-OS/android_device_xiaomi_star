@@ -71,6 +71,11 @@ function blob_fixup() {
         vendor/etc/camera/star_motiontuning.xml|vendor/etc/camera/mars_motiontuning.xml)
             sed -i 's/xml=version/xml\ version/g' "${2}"
 	    ;;
+        vendor/etc/seccomp_policy/atfwd@2.0.policy)
+            [ "$2" = "" ] && return 0
+            [ -n "$(tail -c 1 "${2}")" ] && echo >> "${2}"
+            grep -q "gettid: 1" "${2}" || echo "gettid: 1" >> "${2}"
+            ;;
         vendor/lib64/libwvhidl.so)
             [ "$2" = "" ] && return 0
             "${PATCHELF}" --add-needed "libcrypto_shim.so" "${2}"
