@@ -7,6 +7,7 @@
 
 #define LOG_TAG "UdfpsHandler.star"
 
+#include <aidl/android/hardware/biometrics/fingerprint/BnFingerprint.h>
 #include <android-base/logging.h>
 #include <fcntl.h>
 #include <fstream>
@@ -30,6 +31,8 @@
 #define DISP_PARAM_LOCAL_HBM_MODE "9"
 #define DISP_PARAM_LOCAL_HBM_OFF "0"
 #define DISP_PARAM_LOCAL_HBM_ON "1"
+
+using ::aidl::android::hardware::biometrics::fingerprint::AcquiredInfo;
 
 template <typename T>
 static void set(const std::string& path, const T& value) {
@@ -97,7 +100,7 @@ public:
     }
 
     void onAcquired(int32_t result, int32_t vendorCode) {
-        if (result == FINGERPRINT_ACQUIRED_GOOD) {
+        if (static_cast<AcquiredInfo>(result) == AcquiredInfo::GOOD) {
             mDevice->extCmd(mDevice, COMMAND_NIT, PARAM_NIT_NONE);
             set(DISP_PARAM_PATH, std::string(DISP_PARAM_LOCAL_HBM_MODE) + " " + DISP_PARAM_LOCAL_HBM_OFF);
             set(FOD_STATUS_PATH, FOD_STATUS_OFF);
