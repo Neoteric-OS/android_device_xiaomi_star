@@ -694,6 +694,7 @@ vendor/lib64/libmdsprpc.so
 vendor/lib64/libsdsprpc.so
 
 # Charger (Mi Turbo Charge)
+vendor/etc/charger_fstab.qti
 vendor/bin/batterysecret
 vendor/etc/init/hw/init.batterysecret.rc
 
@@ -995,6 +996,10 @@ vendor/lib64/vendor.qti.ims.rcsconfig@2.0.so
 vendor/lib64/vendor.qti.ims.rcsconfig@2.1.so
 vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so
 vendor/lib64/vendor.qti.imsrtpservice@3.0.so
+
+# Init
+vendor/bin/init.qcom.sh
+vendor/etc/init/hw/init.qti.kernel.rc
 
 # IPA firmware
 vendor/etc/init/ipa_fws.rc
