@@ -1,0 +1,3 @@
+allow priv_app hal_camerapostproc_xiaomi_hwservice:hwservice_manager { find };
+binder_call(priv_app, hal_camera_default)
+get_prop(priv_app, vendor_camera_sensor_prop)
