@@ -163,7 +163,7 @@ debug.stagefright.omx_default_rank=0
 ro.config.vc_call_vol_steps=11
 
 # MGLRU (Multi-gen LRU)
-persist.device_config.mglru_native.lru_gen_config=core
+persist.device_config.mglru_native.lru_gen_config=core_and_mm_walk
 
 # Netflix
 ro.netflix.bsp_rev=Q875-32408-1
