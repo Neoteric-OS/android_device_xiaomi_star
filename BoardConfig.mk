@@ -67,6 +67,7 @@ TARGET_BOOTLOADER_BOARD_NAME := star
 TARGET_NO_BOOTLOADER := true
 
 # Camera
+TARGET_CAMERA_SERVICE_EXT_LIB := //$(DEVICE_PATH):libcameraservice_extension.star
 TARGET_USES_QTI_CAMERA_DEVICE := true
 
 # DTB
